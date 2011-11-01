@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "The Promise of the Web"
-old_url: "http://www.alertdebugging.com/2011/09/22/the-promise-of-the-web/"
 ---
 Joe Hewitt just published a blog post titled "Web Technologies Need an Owner":http://joehewitt.com/post/web-technologies-need-an-owner/, and it has predictably created quite a contentious discussion. I have had the pleasure of discussing these issues with Joe on a few occasions, and have thought a lot about it myself, so I figure it's as good a time as ever to share some of my thoughts, and some of my interpretations of what he is saying. Before I begin, I would like to state something that should be obvious but is often forgotten: we are all on the same page here. We all want a better more vibrant web. We share these opinions precisely because we care about the web.
 

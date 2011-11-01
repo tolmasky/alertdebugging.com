@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Mockingbird, Cappuccino, and what really matters."
-old_url: "http://www.alertdebugging.com/2009/11/04/mockingbird-cappuccino-and-what-really-matters/"
 ---
 I found an "interesting critique":http://groovymother.com/2009/nov/04/mocking2-bird/ via "daring fireball":http://daringfireball.net/linked/2009/11/04/begbie-mockingbird regarding the latest Cappuccino application, Mockingbird. I'm really glad this has come up because I think the concerns are valid and I'm excited that we can start having a conversation about this. One comment in particular really stuck out for me:
 
