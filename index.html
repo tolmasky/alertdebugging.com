@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% for post in site.posts limit:5 %}
+    {% assign post_content = post.content %}
+    {% include article.html %}
+{% endfor %}

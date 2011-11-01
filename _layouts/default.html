@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv = "Content-type" content = "text/html; charset=utf-8" />
+        <meta http-equiv = "Content-Language" content = "en-us" />
+        <meta name = "author" content = "Francisco Tolmasky" />
+        <meta name = "copyright" content = "Francisco Tolmasky, August 2009" />
+        <meta name = "keywords" content = "francisco tolmasky, francisco, tolmasky, cappuccino, open source" />
+        <meta name = "description" content = "Francisco Tolmasky's Personal Blog." />
+
+        <link href = "/css/style.css" media = "screen, projection" rel = "stylesheet" type = "text/css" />
+
+    
+    <title>alert debugging
+    {%if page.title %}
+    &mdash; {{ page.title }}
+    {%endif%}
+    </title>
+    </head>
+    <body>
+        <div id = "banner">&nbsp;</div>
+        <div id = "page">
+            <div id = "header">
+                <h1>
+                    <a href = "http://www.alertdebugging.com/">
+                        <span style = "color:white">alert</span><br/>
+                        <span style = "color:#b36767">debugging</span>
+                    </a>
+                </h1>
+            </div>
+            <hr />
+            {{ content }}
+        </div>
+        <footer>
+            Copyright &copy; 2009 Francisco Ryan Tolmasky. <a href = "http://www.alertdebugging.com/feed/">Entries (RSS)</a> and <a href = "http://alertdebugging.disqus.com/latest.rss">Comments (RSS)</a>.
+        </footer>
+    </div>
+
+    {% include analytics.html %}
+
+    </body>
+</html>
