@@ -6,24 +6,33 @@
     </time>
     <a href = "{{ post.url }}"><h2>{{ post.title }}</h2></a>
     {{ post_content }}
+
     {%if post_comments %}
-    <div id="disqus_thread"></div>
+    <div id = "disqus_thread"></div>
+    {%elsif post.old_url %}
+    <center>
+        <a href = "{{post.old_url}}##disqus_thread" data-disqus-url="{{post.old_url}}">Comments</a>
+    </center>
+    {% else %}
+    <!-- How do we handle this normally? -->
+    {%endif%}
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    //it is : "{{ post.old_url }}"
     var disqus_shortname = "alertdebugging";
     {%if post.old_url %}
     var disqus_url = "{{ post.old_url }}";
     {%endif%}
-
+    {%if post_comments %}
+    var script_url = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    {%else%}
+    var script_url = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    {%endif%}
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = script_url;
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    {% endif %}
 </article>
