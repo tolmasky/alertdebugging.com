@@ -9,19 +9,14 @@
 
     {%if post_comments %}
     <div id = "disqus_thread"></div>
-    {%elsif post.old_url %}
+    {%else%}
     <center>
-        <a href = "{{post.old_url}}##disqus_thread" data-disqus-url="{{post.old_url}}">Comments</a>
+        <a href = "{{post.url}}#disqus_thread">Comments</a>
     </center>
-    {% else %}
-    <!-- How do we handle this normally? -->
     {%endif%}
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = "alertdebugging";
-    {%if post.old_url %}
-    var disqus_url = "{{ post.old_url }}";
-    {%endif%}
     {%if post_comments %}
     var script_url = 'http://' + disqus_shortname + '.disqus.com/embed.js';
     {%else%}
