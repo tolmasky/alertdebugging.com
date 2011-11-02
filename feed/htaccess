@@ -1,0 +1,4 @@
+---
+permalink: /.htaccess
+---
+DirectoryIndex index.xml
