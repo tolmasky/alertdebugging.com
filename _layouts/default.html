@@ -9,14 +9,15 @@
         <meta name = "keywords" content = "francisco tolmasky, francisco, tolmasky, cappuccino, open source" />
         <meta name = "description" content = "Francisco Tolmasky's Personal Blog." />
 
+        <link href = "/feed" rel = "alternate" title = "alert debugging" type = "application/atom+xml" />
+
         <link href = "/css/style.css" media = "screen, projection" rel = "stylesheet" type = "text/css" />
 
-    
-    <title>alert debugging
-    {%if page.title %}
-    &mdash; {{ page.title }}
-    {%endif%}
-    </title>
+        <title>alert debugging
+        {%if page.title %}
+        &mdash; {{ page.title }}
+        {%endif%}
+        </title>
     </head>
     <body>
         <div id = "banner">&nbsp;</div>
@@ -33,7 +34,7 @@
             {{ content }}
         </div>
         <footer>
-            Copyright &copy; 2009 Francisco Ryan Tolmasky. <a href = "http://www.alertdebugging.com/feed/">Entries (RSS)</a> and <a href = "http://alertdebugging.disqus.com/latest.rss">Comments (RSS)</a>.
+            Copyright &copy; 2009 Francisco Ryan Tolmasky. <a href = "/feed">Entries (RSS)</a> and <a href = "http://alertdebugging.disqus.com/latest.rss">Comments (RSS)</a>.
         </footer>
     </div>
 
