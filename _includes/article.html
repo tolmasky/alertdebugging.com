@@ -6,7 +6,11 @@
     </time>
     <a href = "{{ post.url }}"><h2>{{ post.title }}</h2></a>
     {{ post_content }}
-
+    <div style = "height:40px; width:150px; float:right">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ post.url }}">Tweet</a><br/>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="fb-like" data-href="{{ post.url }}" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
+    </div><br style = "clear:both;"/><br/>
     {%if post_comments %}
     <div id = "disqus_thread"></div>
     {%else%}

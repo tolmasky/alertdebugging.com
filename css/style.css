@@ -252,8 +252,8 @@ article ol
 
 article ol li
 {
-	margin: 0;
-	padding: 0;
+	margin: 0 0 10px 0;
+	padding: 0 20px 0 0;
 	font-size:1em;
 }
 
