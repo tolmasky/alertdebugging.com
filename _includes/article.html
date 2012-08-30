@@ -11,27 +11,13 @@
     <div class="fb-like" data-href="http://alertdebugging.com{{ post.url }}" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div><br/>
     <div class="g-plusone" data-annotation="inline" data-width="150"></div>
     </div><br style = "clear:both;"/><br/><br/>
-    {%if post_comments %}
-    <div id = "disqus_thread"></div>
-    {%else%}
+    {%if page.url == '/index.html' %}
     <center>
         <a href = "{{post.url}}#disqus_thread">Comments</a>
     </center>
-    {%endif%}
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = "alertdebugging";
-    {%if post_comments %}
-    var script_url = 'http://' + disqus_shortname + '.disqus.com/embed.js';
     {%else%}
-    var script_url = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    <div id = "disqus_thread"></div>
     {%endif%}
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = script_url;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </article>
